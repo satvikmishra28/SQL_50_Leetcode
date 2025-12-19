@@ -76,6 +76,3 @@ FROM Weather w1 -- Alias w1 for the current day
 JOIN Weather w2 -- Self-join the Weather table
 ON w1.recordDate = w2.recordDate + INTERVAL '1 day' -- w1 is the current day, w2 is the previous day
 WHERE w1.temperature > w2.temperature; -- Compare temperatures of current day and previous day
-    t.visit_id IS NULL
-GROUP BY
-    v.customer_id; 
